@@ -1,0 +1,13 @@
+{
+  "name": "deligoo",
+  "version": "1.0.0",
+  "description": "DeliGoo landing page",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch styles/style.scss --output styles --output-style compressed"
+  },
+  "author": "w.walczak93@gmail.com",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
