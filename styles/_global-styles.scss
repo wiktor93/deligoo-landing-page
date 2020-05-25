@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import './variables';
 @import './mixins';
 @import './break-points';
+@import './headings';
 
 * {
   margin: 0;
@@ -10,10 +11,41 @@
 }
 
 button {
-  border: none;
   background-color: unset;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input,
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 6px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.wraper {
+  margin: 0 auto;
+  max-width: $maxWidth;
 }

@@ -2,40 +2,188 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeliGoo</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta name="description" content="Usługi logistyczne DeliGoo. Już dziś uruchom własne dostawy">
+  <link rel="stylesheet" href="styles/style.css" />
+  <meta name='keywords' content='DeliGoo, deligo, deligoo, usługi logistyczne'>
+  <meta name='robots' content='index,follow'>
+  <link rel="icon" href="./assets/images/favicon.png">
 </head>
 
 <body>
-  <nav>
-    <a href="#"><img class="nav__logo" src="/assets/svg/deligo-logo.svg" alt="DeliGoo logo"></a>
+  <div class="wraper">
+    <nav>
+      <a href="#"><img class="nav__logo" src="./assets/svg/deligo-logo.svg" alt="DeliGoo logo" /></a>
 
-
-    <div class="nav__quick-contact-bar">
-      <p>Zainteresowany?</p>
-      <div>
-        <img class="phone-icon" src="/assets/svg/phone-icon.svg" alt="Phone icon">
-        <span>791 462 067</span>
+      <div class="nav__quick-contact-bar">
+        <p>Zainteresowany?</p>
+        <div>
+          <img class="phone-icon" src="./assets/svg/phone-icon.svg" alt="Phone icon" />
+          <span>791 462 067</span>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <header>
-    # HEADER HERE
-  </header>
+    <header>
+      <h1>
+        Dostarczaj jedzenie ze swojej restauracji <br />
+        i zyskaj nowych klientów
+      </h1>
+      <h2>Już dziś uruchom własne dostawy</h2>
 
-  <main>
-    <div class="main__trusted-clients">
-      Zaufali nam
-    </div>
-    <section>
-    </section>
-  </main>
+      <div class="header__contact">
+        <input type="email" placeholder="Twój adres e-mail" />
+        <input type="number" placeholder="Twój numer telefonu" />
+        <button>Poznaj szczegóły</button>
+      </div>
 
-  <div class="case-study"></div>
-  <footer></footer>
+      <span>Wypełnij co najmniej jedno pole</span>
+      <img class="header_image mobile" src="./assets/svg/header-mobile.svg" alt="Work place" />
+      <img class="header_image desktop" src="./assets/svg/header-desktop.svg" alt="Work place" />
+    </header>
+
+    <main>
+      <div class="trusted-clients-section">
+        <p>Zaufali nam</p>
+        <ul>
+          <li><img src="./assets/images/afavela.png" alt="afavela" /></li>
+          <li>
+            <img src="./assets/images/pizzaigitara.png" alt="pizzaigitara" />
+          </li>
+          <li><img src="./assets/images/falla.png" alt="falla" /></li>
+          <li>
+            <img src="./assets/images/burgerpark.png" alt="burgerpark" />
+          </li>
+          <li><img src="./assets/images/nobosushi.png" alt="nobosushi" /></li>
+          <li>
+            <img src="./assets/images/sushigarden.png" alt="sushigarden" />
+          </li>
+        </ul>
+      </div>
+
+      <section class="product-info-section">
+        <article>
+          <div class="article__text-container">
+            <h2>Dostarczaj jedzenie</h2>
+            <h1>bez zbędnych kosztów</h1>
+            <ul>
+              <li>Uruchom dostawy bez zatrudniania kurierów</li>
+              <li>Zautomatyzuj wszystkie etapy dostawy zamówienia</li>
+              <li>Optymalizuj pracę restauracji</li>
+              <li>Nie płać wysokich prowizji</li>
+            </ul>
+          </div>
+          <figure>
+            <img src="./assets/svg/product-info-1.svg" alt="Girls talking" />
+          </figure>
+        </article>
+
+        <article>
+          <div class="article__text-container">
+            <h2>Zwiększ zadowolenie</h2>
+            <h1>klientów</h1>
+            <ul>
+              <li>Dostarczaj ciepłe posiłki</li>
+              <li>Informuj SMS-em o wszystkich etapach zamówienia</li>
+              <li>Korzystaj z profesjonalnych i przeszkolonych kurierów</li>
+              <li>Skracaj czas dostawy</li>
+            </ul>
+          </div>
+          <figure>
+            <img src="./assets/svg/product-info-2.svg" alt="Chill room" />
+          </figure>
+        </article>
+
+        <article>
+          <div class="article__text-container">
+            <h2>Stwórz stronę</h2>
+            <h1>do zamawiania online</h1>
+            <ul>
+              <li>Przyjmuj więcej zamówień bez odbierania telefonów</li>
+              <li>Zaprezentuj swoje menu w internecie</li>
+              <li>Uniezależnij się od aplikacji zewnętrznych</li>
+              <li>Przyjmuj płatności online</li>
+            </ul>
+          </div>
+          <figure>
+            <img src="./assets/svg/product-info-3.svg" alt="Guy ordering food" />
+          </figure>
+        </article>
+      </section>
+
+      <section class="case-study">
+        <h1>Case Study</h1>
+
+        <div class="case-study__carousel">
+          <button class="carousel__arrow-button">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <path
+                d="M14.7787 8.70353H7.38984L10.0396 6.05629C10.5147 5.57991 10.5086 4.82011 10.0335 4.34976C9.55228 3.87941 8.77867 3.88544 8.30964 4.35579L4.88629 7.78091C3.70457 8.95679 3.70457 10.8683 4.88629 12.0382L8.49238 15.6442C8.72994 15.8794 9.04669 16 9.35735 16C9.66801 16 9.97867 15.8854 10.2162 15.6503C10.6914 15.1799 10.6975 14.4201 10.2223 13.9437L7.38984 11.1156H14.7787C15.4487 11.1156 15.9969 10.5729 15.9969 9.90956C15.9969 9.24624 15.4487 8.70353 14.7787 8.70353Z" />
+            </svg>
+          </button>
+
+          <article class="carousel__article">
+            <figure>
+              <img src="./assets/images/restaurant-interior.png" alt="Restaurant interior" />
+            </figure>
+            <div class="carousel__article__text-container">
+              <span>14 Marzec 2020</span>
+              <h2>
+                Jak usługi logistyczne DeliGoo wpływają na zwiększenie
+                sprzedaży w gastronomii?
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
+                cursus aliquam quam tincidunt. Posuere eu in nam aliquam
+                felis. Turpis a massa aliquet.
+              </p>
+              <button class="read-more-button">
+                Czytaj Case Study
+                <svg width="14" height="14" viewBox="0 0 20 20">
+                  <path
+                    d="M5.22133 8.70353H12.6102L9.96041 6.05629C9.48529 5.57991 9.49138 4.82011 9.96651 4.34976C10.4477 3.87941 11.2213 3.88544 11.6904 4.35579L15.1137 7.78091C16.2954 8.95679 16.2954 10.8683 15.1137 12.0382L11.5076 15.6442C11.2701 15.8794 10.9533 16 10.6426 16C10.332 16 10.0213 15.8854 9.78377 15.6503C9.30864 15.1799 9.30255 14.4201 9.77767 13.9437L12.6102 11.1156H5.22133C4.55128 11.1156 4.00306 10.5729 4.00306 9.90956C4.00306 9.24624 4.55128 8.70353 5.22133 8.70353Z" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <button class="carousel__arrow-button">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <path
+                d="M5.22133 8.70353H12.6102L9.96041 6.05629C9.48529 5.57991 9.49138 4.82011 9.96651 4.34976C10.4477 3.87941 11.2213 3.88544 11.6904 4.35579L15.1137 7.78091C16.2954 8.95679 16.2954 10.8683 15.1137 12.0382L11.5076 15.6442C11.2701 15.8794 10.9533 16 10.6426 16C10.332 16 10.0213 15.8854 9.78377 15.6503C9.30864 15.1799 9.30255 14.4201 9.77767 13.9437L12.6102 11.1156H5.22133C4.55128 11.1156 4.00306 10.5729 4.00306 9.90956C4.00306 9.24624 4.55128 8.70353 5.22133 8.70353Z" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1>DeliGoo ułatwia restauracjom dostawy jedzenia</h1>
+      <p>
+        Zacznij dostarczać posiłki do klientów już dziś. A jeśli już to
+        robisz, zobacz jak zmniejszyć koszty dostaw.
+      </p>
+
+      <div class="footer__input-container">
+        <input type="email" placeholder="Twój adres e-mail" />
+        <button>Dowiedz się więcej</button>
+      </div>
+    </footer>
+
+    <nav class="nav__bottom">
+      <a href="#"><img class="nav__logo" src="./assets/svg/deligo-logo.svg" alt="DeliGoo logo" /></a>
+
+      <div class="nav__quick-contact-bar">
+        <p>Zainteresowany?</p>
+        <div>
+          <img class="phone-icon" src="./assets/svg/phone-icon.svg" alt="Phone icon" />
+          <span>791 462 067</span>
+        </div>
+      </div>
+    </nav>
+  </div>
 </body>
 
 </html>

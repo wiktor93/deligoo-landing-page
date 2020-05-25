@@ -1,0 +1,29 @@
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@media (min-width: $tablet) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $laptop) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: $laptopL) {
+  h1 {
+    font-size: 40px;
+  }
+}

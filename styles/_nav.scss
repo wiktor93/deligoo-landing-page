@@ -1,6 +1,5 @@
 nav {
-  margin: 25px auto;
-  width: $childrenWidth;
+  margin: 25px $childrenMargin;
   max-width: 1520px;
   display: flex;
   flex-direction: column;
@@ -37,10 +36,7 @@ nav {
       margin: 0 15px;
     }
   }
-
 }
-
-
 
 @media (min-width: $tablet) {
   nav {
@@ -56,8 +52,22 @@ nav {
   }
 }
 
+@media (min-width: $laptop) {
+  nav {
+    margin: 40px 80px 38px;
+  }
+
+  .nav__bottom {
+    margin: 46px 116px 67px;
+  }
+}
+
 @media (min-width: $laptopL) {
   nav {
-    margin: 60px auto 58px;
+    margin: 60px 80px 58px;
+  }
+
+  .nav__bottom {
+    margin: 76px 116px 87px;
   }
 }
